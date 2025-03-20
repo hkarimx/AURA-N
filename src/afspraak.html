@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AURA - Afspraak Maken</title>
+
+
+  <link rel="stylesheet" href="css/aura.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <div class="logo">AURA</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="prijzen.html">Prijzen</a></li>
+      <li><a href="afspraak.html">Afspraak maken</a></li>
+    </ul>
+    <a href="afspraak.html" class="btn-nav">Maak Afspraak</a>
+  </nav>
+</header>
+
+<main>
+  <section class="appointment">
+    <h2>Maak een afspraak</h2>
+    <p>Vul het onderstaande formulier in en wij nemen spoedig contact met je op.</p>
+    <form action="#" method="POST" class="appointment-form" id="appointment-form">
+      <label for="name">Naam:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Telefoonnummer:</label>
+      <input type="text" id="phone" name="phone" required />
+
+      <label for="date">Datum:</label>
+      <input type="date" id="date" name="date" required />
+
+      <label for="time">Tijd:</label>
+      <input type="time" id="time" name="time" required />
+
+      <label for="service">Behandeling:</label>
+      <select id="service" name="service" required>
+        <option value="">-- Kies een behandeling --</option>
+        <option value="knippen">Knippen</option>
+        <option value="kleuren">Kleuren</option>
+        <option value="behandeling">Behandeling</option>
+        <option value="special">Speciale Gelegenheden</option>
+      </select>
+
+      <label for="message">Opmerkingen:</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <button type="submit" class="btn-primary">Verstuur afspraak</button>
+    </form>
+
+
+    <div id="confirmation" style="display:none; margin-top:1rem;">
+      <p>Bedankt voor je afspraakaanvraag! We nemen spoedig contact met je op.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 AURA. Alle rechten voorbehouden.</p>
+</footer>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
